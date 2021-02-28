@@ -10,7 +10,10 @@
     "posttest": "rm ./src/database/database.test.sqlite"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "nodemailer": "^6.5.0",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.0.2",
     "typeorm": "^0.2.31"
@@ -19,6 +22,7 @@
     "@types/express": "^4.17.11",
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.31",
+    "@types/nodemailer": "^6.4.0",
     "@types/supertest": "^2.0.10",
     "cross-env": "^7.0.3",
     "jest": "^26.6.3",
