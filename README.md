@@ -8,7 +8,9 @@
   <a href="#dev">Dev</a>
 </p>
 
-![](nps-image.png)
+<p align="center">
+  <img width="440" height="280" src="nps-image.png">
+</p>
 
 <div id="sobre">
   
@@ -18,7 +20,9 @@ Esta é uma API para NPS (Net Promoter Score), desenvolvida na trilha de Node.js
 
 Abaixo é possível observar o Diagrama de Entidade e Relacionamento em que a API foi baseada, onde há 3 tabelas: uma para usuários, uma para pesquisas e outra como ponte, relacionando as duas tabelas.
 
-![](DER.png)
+<p align="center">
+  <img width="600" height="400" src="DER.png">
+</p>
 
 </div>
 
@@ -59,7 +63,7 @@ $ yarn dev
 : '
 Para visualizar os dados já cadastrados no banco, instale em seu Visual Studio Code a extenção SQLite.
 Pressione as teclas "ctrl" + "shift" + "p" e selecione "api/src/database.sqlite".
-Caso queira cadastrar os dados, exclua o arquivo e rode as migrations (criam as tabelas), depois use o Insomnia para criar os novos registros
+Caso queira cadastrar os dados, exclua o arquivo e rode as migrations (criam as tabelas), use o Insomnia para criar os novos registros
 '
 $ yarn typeorm migration:run
 
