@@ -8,7 +8,7 @@
   <a href="#dev">Dev</a>
 </p>
 
-[](nps-image.png)
+![](nps-image.png)
 
 <div id="sobre">
   
@@ -17,7 +17,8 @@ Esta é uma API para NPS (Net Promoter Score), desenvolvida na trilha de Node.js
 - Funcionamento: ao criar uma pesquisa e registrar os usuários que irão respondê-la, é possível enviar um e-mail solicitando aos participantes para que respondam o questionário (inicialmente, composto por uma única pergunta, relacionado a nota que o usuário dá a determinado serviço, neste caso, o exemplo usado foi a própria NLW)
 
 Abaixo é possível observar o Diagrama de Entidade e Relacionamento em que a API foi baseada, onde há 3 tabelas: uma para usuários, uma para pesquisas e outra como ponte, relacionando as duas tabelas.
-[](DER.png)
+
+![](DER.png)
 
 </div>
 
@@ -55,12 +56,20 @@ $ yarn add ...
 # Execute a aplicação
 $ yarn dev
 
-# Para visualizar os dados já cadastrados no banco, instale em seu Visual Studio Code a extenção SQLite e então pressione as teclas "ctrl" + "shift" + "p" e selecione "api/src/database.sqlite". Caso queira cadastrar os dados, exclua o arquivo e rode as migrations (criam as tabelas), depois use o Insomnia para criar os novos registros 
+: '
+Para visualizar os dados já cadastrados no banco, instale em seu Visual Studio Code a extenção SQLite.
+Pressione as teclas "ctrl" + "shift" + "p" e selecione "api/src/database.sqlite".
+Caso queira cadastrar os dados, exclua o arquivo e rode as migrations (criam as tabelas), depois use o Insomnia para criar os novos registros
+'
 $ yarn typeorm migration:run
 
-# Para utilizar as funcionalidades da aplicação, use o Insomnia para enviar um email com uma pesquisa para algum usuário, e então abra o link do terminal e responda à pesquisa. Ainda pelo Insominia, ao pedir o cáclulo do NPS, o mesmo será feito a partir das respostas obtidas e cadastradas no banco de dados
+: '
+Para utilizar as funcionalidades da aplicação, use o Insomnia para enviar um email com uma pesquisa para algum usuário.
+Abra o link do terminal e responda à pesquisa.
+Ainda pelo Insominia, ao pedir o cáclulo do NPS, o mesmo será feito a partir das respostas obtidas e cadastradas no banco de dados
+'
 
-# Para executar testes com o banco de dados (criação, cadastro e exclusão), digite em seu terminal o comando
+# Para executar testes com o banco de dados (criação, cadastro e exclusão)
 $ yarn test
 ```
 
