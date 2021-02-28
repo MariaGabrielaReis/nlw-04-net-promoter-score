@@ -60,18 +60,14 @@ $ yarn add ...
 # Execute a aplicação
 $ yarn dev
 
-: '
-Para visualizar os dados já cadastrados no banco, instale em seu Visual Studio Code a extenção SQLite.
-Pressione as teclas "ctrl" + "shift" + "p" e selecione "api/src/database.sqlite".
-Caso queira cadastrar os dados, exclua o arquivo e rode as migrations (criam as tabelas), use o Insomnia para criar os novos registros
-'
+# Para visualizar os dados já cadastrados no banco, instale em seu Visual Studio Code a extenção SQLite.
+# Pressione as teclas "ctrl" + "shift" + "p" e selecione "api/src/database.sqlite".
+# Caso queira cadastrar os dados, exclua o arquivo e rode as migrations (criam as tabelas), use o Insomnia para criar os novos registros
 $ yarn typeorm migration:run
 
-: '
-Para utilizar as funcionalidades da aplicação, use o Insomnia para enviar um email com uma pesquisa para algum usuário.
-Abra o link do terminal e responda à pesquisa.
-Ainda pelo Insominia, ao pedir o cáclulo do NPS, o mesmo será feito a partir das respostas obtidas e cadastradas no banco de dados
-'
+# Para utilizar as funcionalidades da aplicação, use o Insomnia para enviar um email com uma pesquisa para algum usuário.
+# Abra o link do terminal e responda à pesquisa.
+# Ainda pelo Insominia, ao pedir o cáclulo do NPS, o mesmo será feito a partir das respostas obtidas e cadastradas no banco de dados
 
 # Para executar testes com o banco de dados (criação, cadastro e exclusão)
 $ yarn test
